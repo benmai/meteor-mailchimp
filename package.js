@@ -1,5 +1,5 @@
 Package.describe({
-	name    : 'miro:mailchimp',
+	name    : 'ben:mailchimp',
 	version : '1.0.4',
 	summary : 'A Meteor wrapper for MailChimp API',
 	homepage: "http://mailchimp.meteor.com",
@@ -11,11 +11,12 @@ Package.onUse( function ( api, where ) {
 
 	api.versionsFrom('METEOR@0.9.2');
 
-	api.use( ['templating'], 'client' );
+	api.use( ['templating', 'anti:i18n'], 'client' );
 
 	api.addFiles( 'lib/server/mailchimp.js', 'server' );
 
 	api.addFiles([
+		'lib/client/i18n.js',
 		'lib/client/views/subscribe/subscribe.html',
 		'lib/client/views/subscribe/subscribe.js',
 		'lib/client/mailchimp.js'
