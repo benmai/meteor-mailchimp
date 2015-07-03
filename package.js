@@ -1,10 +1,9 @@
 Package.describe({
-	name    : 'ben:mailchimp',
-	version : '1.0.4',
-	summary : 'A Meteor wrapper for MailChimp API',
-	homepage: "http://mailchimp.meteor.com",
-	author  : "Miroslav Hibler (http://miro.hibler.me)",
-	git     : 'https://github.com/MiroHibler/meteor-mailchimp.git'
+	name    : 'benmai:mailchimp',
+	version : '1.0.5',
+	summary : 'A Meteor wrapper for MailChimp API with i18n',
+	author  : "Ben Isaacs",
+	git     : 'https://github.com/benmai/meteor-mailchimp.git'
 });
 
 Package.onUse( function ( api, where ) {
